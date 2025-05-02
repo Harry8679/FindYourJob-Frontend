@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../index.css';
+import bg3 from '../assets/images/hero/bg3.jpg';
+
+const sectionStyle = {
+    backgroundImage: `url(${bg3})`,
+  };
 
 const Login = () => {
   return (
-    <section className="h-screen flex items-center justify-center relative overflow-hidden bg-[url('../../assets/images/hero/bg3.jpg')] bg-no-repeat bg-center bg-cover">
+    <section style={sectionStyle} className="h-screen flex items-center justify-center relative overflow-hidden bg-no-repeat bg-center bg-cover">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900"></div>
       <div className="container">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
