@@ -2,5 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Puis un seul import après Tailwind */
-@import './assets/css/custom/custom.css';
+/* Ensuite seulement ton CSS custom */
+/* @import './assets/css/custom/custom.css'; */
