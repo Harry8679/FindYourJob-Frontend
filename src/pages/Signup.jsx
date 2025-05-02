@@ -9,7 +9,6 @@ const sectionStyle = {
 
 const Signup = () => {
   return (
-    // <section className="h-screen flex items-center justify-center relative overflow-hidden bg-[url('../../assets/images/hero/bg3.jpg')] bg-no-repeat bg-center bg-cover">
     <section style={sectionStyle} className="h-screen flex items-center justify-center relative overflow-hidden bg-no-repeat bg-center bg-cover">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900"></div>
       <div className="container">
