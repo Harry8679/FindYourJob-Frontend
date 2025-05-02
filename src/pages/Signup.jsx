@@ -44,7 +44,7 @@ const Signup = () => {
 
                   <div className="text-center">
                     <span className="text-slate-400 me-2">Already have an account?</span>
-                    <Link to="/" className="text-slate-900 dark:text-white font-bold">Sign in</Link>
+                    <Link to="/connexion" className="text-slate-900 dark:text-white font-bold">Sign in</Link>
                   </div>
                 </div>
               </form>
