@@ -1,6 +1,7 @@
-/* IMPORTS AVANT TAILWIND ! */
-@import './assets/css/custom/structure/_general.css';
+/* 👇 CSS custom (chemins corrects) */
+@import './assets/css/custom/_general.css';
 @import './assets/css/custom/structure/_topnav.css';
+
 @import './assets/css/custom/pages/_hero.css';
 @import './assets/css/custom/pages/_choices.css';
 @import './assets/css/custom/pages/_contact.css';
@@ -8,7 +9,7 @@
 @import './assets/css/custom/pages/_helper.css';
 @import './assets/css/custom/pages/_testi.css';
 
-/* Tailwind directives après les imports custom */
+/* 👇 Tailwind directives à la fin */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
