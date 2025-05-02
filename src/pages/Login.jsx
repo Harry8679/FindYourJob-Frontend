@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../index.css';
 import bg3 from '../assets/images/hero/bg3.jpg';
+import LogoDark from '../assets/images/logo-dark.png';
+import LogoLight from '../assets/images/logo-light.png';
 
 const sectionStyle = {
     backgroundImage: `url(${bg3})`,
@@ -16,8 +18,8 @@ const Login = () => {
           <div className="relative overflow-hidden bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-800 rounded-md">
             <div className="p-6">
               <Link to="/">
-                <img src="/assets/images/logo-dark.png" className="mx-auto h-[24px] block dark:hidden" alt="logo dark" />
-                <img src="/assets/images/logo-light.png" className="mx-auto h-[24px] dark:block hidden" alt="logo light" />
+                <img src={LogoDark} className="mx-auto h-[24px] block dark:hidden" alt="logo dark" />
+                <img src={LogoLight} className="mx-auto h-[24px] dark:block hidden" alt="logo light" />
               </Link>
               <h5 className="my-6 text-xl font-semibold">Login</h5>
               <form className="text-start">

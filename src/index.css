@@ -1,4 +1,3 @@
-/* 👇 CSS custom (chemins corrects) */
 @import './assets/css/custom/_general.css';
 @import './assets/css/custom/structure/_topnav.css';
 
@@ -9,7 +8,7 @@
 @import './assets/css/custom/pages/_helper.css';
 @import './assets/css/custom/pages/_testi.css';
 
-/* 👇 Tailwind directives à la fin */
+/* Tailwind directives en dernier */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
