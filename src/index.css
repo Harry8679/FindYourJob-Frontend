@@ -1,3 +1,16 @@
+/* Tailwind (si tu veux l'utiliser) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Structure */
+@import './assets/css/custom/structure/_general.css';
+@import './assets/css/custom/structure/_topnav.css';
+
+/* Pages */
+@import './assets/css/custom/pages/_hero.css';
+@import './assets/css/custom/pages/_choices.css';
+@import './assets/css/custom/pages/_contact.css';
+@import './assets/css/custom/pages/_countdown.css';
+@import './assets/css/custom/pages/_helper.css';
+@import './assets/css/custom/pages/_testi.css';
