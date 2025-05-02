@@ -2,12 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ensuite tes imports custom */
-@import './assets/css/custom/_general.css';
-@import './assets/css/custom/structure/_topnav.css';
-@import './assets/css/custom/pages/_hero.css';
-@import './assets/css/custom/pages/_choices.css';
-@import './assets/css/custom/pages/_contact.css';
-@import './assets/css/custom/pages/_countdown.css';
-@import './assets/css/custom/pages/_helper.css';
-@import './assets/css/custom/pages/_testi.css';
+/* Puis un seul import après Tailwind */
+@import './assets/css/custom/custom.css';
