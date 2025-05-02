@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+/* Custom CSS from template */
 @import './assets/css/custom/_general.css';
 @import './assets/css/custom/structure/_topnav.css';
 
@@ -8,7 +11,7 @@
 @import './assets/css/custom/pages/_helper.css';
 @import './assets/css/custom/pages/_testi.css';
 
-/* Tailwind directives en dernier */
+/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
