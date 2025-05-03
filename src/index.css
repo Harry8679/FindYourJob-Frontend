@@ -2,7 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './assets/css/custom/_general.css';
-@import './assets/css/custom/pages/_helper.css';
-@import './assets/css/custom/pages/_contact.css';
-/* ajoute ici tous les fichiers CSS utiles au design */
+@import './App.css';
