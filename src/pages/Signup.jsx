@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import bg3 from '../assets/images/hero/bg3.jpg';
 import bg3 from '../assets/images/hero/bg3.jpg';
 
 const sectionStyle = {
