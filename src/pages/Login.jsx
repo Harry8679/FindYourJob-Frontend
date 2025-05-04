@@ -1,66 +1,109 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../index.css';
 import bg3 from '../assets/images/hero/bg3.jpg';
 import LogoDark from '../assets/images/logo-dark.png';
 import LogoLight from '../assets/images/logo-light.png';
 
 const sectionStyle = {
-    backgroundImage: `url(${bg3})`,
-  };
+  backgroundImage: `url(${bg3})`,
+};
 
 const Login = () => {
   return (
-    <section style={sectionStyle} className="h-screen flex items-center justify-center relative overflow-hidden bg-no-repeat bg-center bg-cover">
+    <section
+      style={sectionStyle}
+      className="h-screen flex items-center justify-center relative overflow-hidden bg-no-repeat bg-center bg-cover"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900"></div>
-      <div className="container">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-          <div className="relative overflow-hidden bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-800 rounded-md">
-            <div className="p-6">
-              <Link to="/">
-                <img src={LogoDark} className="mx-auto h-[24px] block dark:hidden" alt="logo dark" />
-                <img src={LogoLight} className="mx-auto h-[24px] dark:block hidden" alt="logo light" />
-              </Link>
-              <h5 className="my-6 text-xl font-semibold">Login</h5>
-              <form className="text-start">
-                <div className="grid grid-cols-1">
-                  <div className="mb-4 text-start">
-                    <label className="font-semibold" htmlFor="LoginEmail">Email Address:</label>
-                    <input id="LoginEmail" type="email" className="form-input mt-3 rounded-md" placeholder="name@example.com" />
-                  </div>
 
-                  <div className="mb-4 text-start">
-                    <label className="font-semibold" htmlFor="LoginPassword">Password:</label>
-                    <input id="LoginPassword" type="password" className="form-input mt-3 rounded-md" placeholder="Password:" />
-                  </div>
-
-                  <div className="flex justify-between mb-4">
-                    <div className="inline-flex items-center mb-0">
-                      <input className="form-checkbox size-4 border border-gray-200 dark:border-gray-800 accent-green-600 me-2" type="checkbox" id="RememberMe" />
-                      <label htmlFor="RememberMe" className="text-slate-400">Remember me</label>
-                    </div>
-                    <p className="text-slate-400 mb-0"><Link to="/reset-password" className="text-slate-400">Forgot password?</Link></p>
-                  </div>
-
-                  <div className="mb-4">
-                    <input type="submit" className="py-1 px-5 w-full font-semibold bg-emerald-600 hover:bg-emerald-700 border border-emerald-600 hover:border-emerald-700 text-white rounded-md" value="Login / Sign in" />
-                  </div>
-
-                  <div className="text-center">
-                    <span className="text-slate-400 me-2">Don't have an account?</span>
-                    <Link to="/inscription" className="text-slate-900 dark:text-white font-bold">Sign Up</Link>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <div className="px-6 py-2 bg-slate-50 dark:bg-slate-800 text-center">
-              <p className="mb-0 text-gray-400 font-medium">
-                © {new Date().getFullYear()} Jobstack. Designed by <a href="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</a>.
-              </p>
-            </div>
-          </div>
+      <div className="relative z-10 w-full max-w-md p-8 bg-white dark:bg-slate-900 rounded-lg shadow-lg">
+        <div className="flex justify-center mb-6">
+          <img
+            src={LogoDark}
+            className="h-6 block dark:hidden"
+            alt="logo dark"
+          />
+          <img
+            src={LogoLight}
+            className="h-6 hidden dark:block"
+            alt="logo light"
+          />
         </div>
+
+        <h2 className="text-xl font-semibold text-center text-gray-800 dark:text-white mb-6">
+          Login
+        </h2>
+
+        <form className="space-y-4">
+          <div>
+            <label htmlFor="LoginEmail" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              Email Address
+            </label>
+            <input
+              id="LoginEmail"
+              type="email"
+              placeholder="name@example.com"
+              className="mt-1 w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-slate-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="LoginPassword" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              Password
+            </label>
+            <input
+              id="LoginPassword"
+              type="password"
+              placeholder="Password"
+              className="mt-1 w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-slate-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+          </div>
+
+          <div className="flex items-center justify-between">
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                className="form-checkbox text-emerald-600 dark:bg-slate-800"
+              />
+              <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">
+                Remember me
+              </span>
+            </label>
+            <Link
+              to="/reset-password"
+              className="text-sm text-emerald-600 hover:underline"
+            >
+              Forgot password?
+            </Link>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-md transition duration-150"
+          >
+            Login / Sign in
+          </button>
+        </form>
+
+        <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
+          Don&apos;t have an account?{' '}
+          <Link to="/inscription" className="font-medium text-emerald-600 hover:underline">
+            Sign Up
+          </Link>
+        </p>
+
+        <footer className="mt-6 text-center text-xs text-gray-500 dark:text-gray-500">
+          © {new Date().getFullYear()} Jobstack. Designed by{' '}
+          <a
+            href="https://shreethemes.in/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            Shreethemes
+          </a>
+          .
+        </footer>
       </div>
     </section>
   );
