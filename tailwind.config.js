@@ -1,7 +1,9 @@
+import forms from '@tailwindcss/forms';
+
 export default {
   content: [
     './index.html',
-    './src/**/*.{js,ts,jsx,tsx,css}', // pour que les classes soient reconnues partout
+    './src/**/*.{js,ts,jsx,tsx,css}',
   ],
   theme: {
     extend: {
@@ -10,5 +12,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [forms],
 };
